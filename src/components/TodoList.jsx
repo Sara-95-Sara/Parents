@@ -9,7 +9,7 @@ class TodoList extends (Component) {
 
   borrarElemento = (id) => {
     axios.delete(`http://localhost:8000/todos/${id}`).then((res) =>
-        this.props.borrarTodo(res.data)
+        this.props.borrarTodo(id)
       )
   }
 

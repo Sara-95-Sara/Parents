@@ -12,9 +12,9 @@ class Todos extends Component {
     };
   }
 
-  borrarTodo = (todo) => {
+  borrarTodo = (id) => {
     this.setState({
-      todos: [...this.state.todos.filter((x)=>{ return x.id !== todo.id})]
+      todos: [...this.state.todos.filter((x)=>{ return x.id !== id})]
     })
   }
   addTodo = (todo) => {
